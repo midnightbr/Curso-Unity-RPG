@@ -179,6 +179,11 @@ CapsuleCollider:
   m_Height: 0.45
   m_Direction: 1
   m_Center: {x: 0, y: 0.27, z: 0.01}
+--- !u!1 &447841189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1161122983501801152, guid: 38861d9260d7af84c982972601db24f9, type: 3}
+  m_PrefabInstance: {fileID: 1246354986}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494756993 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3086436065929644917, guid: 38861d9260d7af84c982972601db24f9, type: 3}
@@ -207,11 +212,6 @@ CapsuleCollider:
   m_Height: 0.45
   m_Direction: 1
   m_Center: {x: 0, y: 0.27, z: 0.01}
---- !u!1 &574731313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5195048882033904264, guid: 38861d9260d7af84c982972601db24f9, type: 3}
-  m_PrefabInstance: {fileID: 1246354986}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &582891340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6796194664811587152, guid: 38861d9260d7af84c982972601db24f9, type: 3}
@@ -1452,9 +1452,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.075
-  m_Height: 0.2
+  m_Height: 0.34
   m_Direction: 1
-  m_Center: {x: 0, y: 0.12, z: -0.002}
+  m_Center: {x: 0, y: 0.05, z: -0.002}
 --- !u!1001 &1092041038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2609,7 +2609,7 @@ Cloth:
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
+  m_WorldAccelerationScale: 0.6
   m_Friction: 0.5
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
@@ -3944,8 +3944,8 @@ PrefabInstance:
       addedObject: {fileID: 1490570292}
     - targetCorrespondingSourceObject: {fileID: -3542885339558904099, guid: 38861d9260d7af84c982972601db24f9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1463189527}
-    - targetCorrespondingSourceObject: {fileID: -5195048882033904264, guid: 38861d9260d7af84c982972601db24f9, type: 3}
+      addedObject: {fileID: 1463189529}
+    - targetCorrespondingSourceObject: {fileID: -1161122983501801152, guid: 38861d9260d7af84c982972601db24f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1246354990}
     - targetCorrespondingSourceObject: {fileID: 3622661364822647131, guid: 38861d9260d7af84c982972601db24f9, type: 3}
@@ -3976,7 +3976,7 @@ CapsuleCollider:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574731313}
+  m_GameObject: {fileID: 447841189}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3989,10 +3989,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.075
-  m_Height: 0.2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.035, z: 0}
+  m_Radius: 0.095
+  m_Height: 0.45
+  m_Direction: 0
+  m_Center: {x: 0, y: -0.132, z: -0.14}
 --- !u!1 &1349712647 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1552236528443304843, guid: 38861d9260d7af84c982972601db24f9, type: 3}
@@ -4020,7 +4020,7 @@ CapsuleCollider:
   m_Radius: 0.07
   m_Height: 0.21
   m_Direction: 1
-  m_Center: {x: 0, y: 0.068, z: 0.072}
+  m_Center: {x: 0, y: 0.068, z: 0.066}
 --- !u!1 &1352260910
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,7 +4144,7 @@ Cloth:
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
+  m_WorldAccelerationScale: 0.5
   m_Friction: 0.5
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
@@ -5290,7 +5290,7 @@ Cloth:
   - {fileID: 1349712648}
   - {fileID: 979183016}
   - {fileID: 1246354990}
-  - {fileID: 1463189527}
+  - {fileID: 1463189529}
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
   m_SelfCollisionStiffness: 0.2
@@ -5371,7 +5371,7 @@ Cloth:
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
+  m_WorldAccelerationScale: 0.5
   m_Friction: 0.5
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
@@ -6586,7 +6586,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -3542885339558904099, guid: 38861d9260d7af84c982972601db24f9, type: 3}
   m_PrefabInstance: {fileID: 1246354986}
   m_PrefabAsset: {fileID: 0}
---- !u!136 &1463189527
+--- !u!136 &1463189529
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6605,10 +6605,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.165
   m_Height: 0.6
   m_Direction: 1
-  m_Center: {x: 0, y: -0.12, z: 0.006}
+  m_Center: {x: 0.015, y: -0.21, z: 0.015}
 --- !u!1 &1490570290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4332706925441422008, guid: 38861d9260d7af84c982972601db24f9, type: 3}
@@ -9737,7 +9737,7 @@ Cloth:
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
+  m_WorldAccelerationScale: 0.5
   m_Friction: 0.5
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
@@ -10883,7 +10883,6 @@ Cloth:
   - {fileID: 1349712648}
   - {fileID: 979183016}
   - {fileID: 1246354990}
-  - {fileID: 1463189527}
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
   m_SelfCollisionStiffness: 0.2
@@ -10964,7 +10963,7 @@ Cloth:
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0.5
-  m_WorldAccelerationScale: 1
+  m_WorldAccelerationScale: 0.5
   m_Friction: 0.5
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 1
@@ -12110,7 +12109,7 @@ Cloth:
   - {fileID: 1349712648}
   - {fileID: 979183016}
   - {fileID: 1246354990}
-  - {fileID: 1463189527}
+  - {fileID: 1463189529}
   m_SphereColliders: []
   m_SelfCollisionDistance: 0
   m_SelfCollisionStiffness: 0.2
