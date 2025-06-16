@@ -31,36 +31,36 @@ public class Player : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         moveDirection = new Vector3(horizontal, 0, vertical);
 
-        if (moveDirection.magnitude >= 0.1f)
-        {
-            // Calculando a direção de movimento e rotação do jogador
-            view = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + PlayerCamTransform.eulerAngles.y;
-            angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, view, ref playerRotationSpeed, SmoothRotation);
+        // Calculando a direção de movimento e rotação do jogador
+        view = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg + PlayerCamTransform.eulerAngles.y;
+        angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, view, ref playerRotationSpeed, SmoothRotation);
 
-            MovimentarPersonagem("Walk");
+        MovimentarPersonagem("Walk");
 
-            if (Input.GetKey(KeyCode.LeftShift))
-                MovimentarPersonagem("Run");
-            else
-                PlayerAnimator.SetBool("Run", false);
-
-        }
+        if (Input.GetKey(KeyCode.LeftShift))
+            MovimentarPersonagem("Run");
         else
-        {
             PlayerAnimator.SetBool("Run", false);
-            PlayerAnimator.SetBool("Walk", false);
-        }
+
+
     }
 
     void MovimentarPersonagem(string nomeDoMovimento)
     {
-        // Calculando a direção de movimento e rotação do jogador
-        transform.rotation = Quaternion.Euler(0, angle, 0);
-        Vector3 newDirection = Quaternion.Euler(0, view, 0) * Vector3.forward;
+        if (moveDirection.magnitude >= 0.1f)
+        {
+            // Calculando a direção de movimento e rotação do jogador
+            transform.rotation = Quaternion.Euler(0, angle, 0);
+            Vector3 newDirection = Quaternion.Euler(0, view, 0) * Vector3.forward;
 
-        // Movendo o jogador na direção calculada
-        PlayerController.Move(newDirection * Speed * Time.deltaTime);
-        PlayerAnimator.SetBool(nomeDoMovimento, true);
+            // Movendo o jogador na direção calculada
+            PlayerController.Move(newDirection * Speed * Time.deltaTime);
+            PlayerAnimator.SetBool(nomeDoMovimento, true);
 
+        }
+        else
+        {
+            PlayerAnimator.SetBool(nomeDoMovimento, false);
+        }
     }
 }
